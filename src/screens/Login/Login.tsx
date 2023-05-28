@@ -12,6 +12,7 @@ import {
 } from "./LoginStyles";
 import ButtonGoogle from "../../components/ButtonGoogle/ButtonGoogle";
 import Socialbutton from "../../components/SocialButton/SocialButton";
+import Input from "../../components/Input/Input";
 
 const Login: React.FC = () => {
   return (
@@ -19,14 +20,16 @@ const Login: React.FC = () => {
       <Container>
         <ContentHeader>
           <Title>Seja bem vindo(a) {"\n"} ao App carteira </Title>
-          <Description>Entrar com redes sociais</Description>
+          <Description>Entrar com</Description>
           <ViewButton>
             <ButtonGoogle title="Google"/>
             <Socialbutton title="Facebook" iconName="facebook"/>
           </ViewButton>
         </ContentHeader>
 
-      <ContentBody></ContentBody>
+      <ContentBody>
+        <Input name="email" iconName="mail"/>
+      </ContentBody>
 
       <ContentFooter></ContentFooter>
       </Container>
